@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "toolkit"
+version = "1.0.0"
+description = "Лабораторная работа 1. Консольный набор утилит"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "Ларионов Матвей Дмитриевич", email = "m.d.larionov@yandex.ru" }
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
